@@ -2,11 +2,12 @@ from fastapi import FastAPI
 
 from app.api.chat import router as chat_router
 from app.api.health import router as health_router
+from app.config.settings import settings
 
 app = FastAPI(
-    title="Bright Assistant",
+    title=settings.APP_NAME,
     description="AI-powered Engineering Assistant",
-    version="0.1.0",
+    version=settings.VERSION,
 )
 
 app.include_router(health_router)

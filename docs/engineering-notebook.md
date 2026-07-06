@@ -172,3 +172,29 @@ We decided that:
 Create a configuration layer using `settings.py`.
 
 Then connect Bright Assistant to a real AI model.
+
+
+## Topic
+
+Configuration Management
+
+### What I Learned
+
+- Applications should not hardcode configuration values.
+- Environment variables allow different configurations for development, testing, and production.
+- `BaseSettings` loads configuration automatically.
+- `.env` stores local configuration.
+- `.env.example` documents required configuration without exposing secrets.
+
+### Why It Matters
+
+A professional application should be configurable without changing the source code.
+
+### Challenges
+
+- Learned where `.env` should be stored.
+- Learned how FastAPI loads application settings.
+
+### Next Goal
+
+Build a logging system for Bright Assistant.

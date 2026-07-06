@@ -254,3 +254,14 @@ Bright Assistant is not just an AI chatbot.
 It is an Engineering Companion.
 
 Every decision made in this project should support that vision.
+## Architecture Rule
+
+API routes should never contain business logic.
+
+Routes receive requests.
+
+Services perform work.
+
+Models define data.
+
+Main creates the application.

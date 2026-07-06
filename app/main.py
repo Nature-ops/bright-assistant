@@ -1,30 +1,13 @@
 from fastapi import FastAPI
-from app.models.chat import ChatRequest, ChatResponse
+
+from app.api.chat import router as chat_router
+from app.api.health import router as health_router
 
 app = FastAPI(
     title="Bright Assistant",
     description="AI-powered Engineering Assistant",
-    version="0.1.0"
+    version="0.1.0",
 )
 
-
-@app.get("/")
-def home():
-    return {
-        "message": "Welcome to Bright Assistant!",
-        "version": "0.1.0",
-        "status": "Running"
-    }
-
-
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy"
-    }
-
-@app.post("/chat", response_model=ChatResponse)
-def chat(request: ChatRequest):
-    return ChatResponse(
-        response=f"Hello! You said: {request.message}"
-    )
+app.include_router(health_router)
+app.include_router(chat_router)

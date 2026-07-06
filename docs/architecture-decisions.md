@@ -1,17 +1,21 @@
 # ADR-001
 
 ## Decision
+
 Use FastAPI as the backend framework.
 
 ## Why
+
+- Automatic documentation
 - Excellent performance
-- Automatic API documentation
-- Strong type validation with Pydantic
-- Well suited for AI and cloud services
+- Strong typing
+- Ideal for AI APIs
 
 ## Alternatives
+
 - Flask
 - Django
 
 ## Trade-offs
-- Slightly steeper learning curve than Flask
+
+FastAPI requires learning type hints and Pydantic, but provides better structure for modern API development.

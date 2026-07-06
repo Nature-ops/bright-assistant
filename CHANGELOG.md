@@ -1,13 +1,30 @@
 # Changelog
 
+---
+
 ## v0.1.0 - Project Foundation
 
 ### Added
-- Created the Bright Assistant GitHub repository.
-- Set up the Python virtual environment.
+
+- Initialized the Bright Assistant GitHub repository.
+- Created the Python virtual environment.
 - Installed FastAPI and Uvicorn.
-- Created the project structure.
-- Added the first FastAPI application.
-- Added the `/` endpoint.
-- Added the `/health` endpoint.
+- Created the initial project structure.
+- Added the root (`/`) endpoint.
+- Added the health (`/health`) endpoint.
 - Verified the application runs locally.
+
+---
+
+## v0.2.0 - Modular API Architecture
+
+### Added
+
+- Created the `api` module.
+- Created the `services` module.
+- Added the `ChatService` class.
+- Added the `/chat` endpoint.
+- Added request and response models.
+- Separated API routes from business logic.
+- Added Swagger API testing support.
+- Created the initial project documentation.

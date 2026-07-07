@@ -37,3 +37,13 @@
 - Added `.env.example`.
 - Configured FastAPI to use centralized settings.
 - Prepared the project for environment-based configuration.
+## v0.6.0 - AI Provider Architecture
+
+### Added
+
+- Created AI provider abstraction.
+- Added BaseAIProvider interface.
+- Added Ollama provider implementation.
+- Connected ChatService to PromptService.
+- Connected PromptService to AI Provider.
+- Simulated AI responses using provider architecture.

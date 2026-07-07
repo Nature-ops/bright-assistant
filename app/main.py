@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.api.chat import router as chat_router
 from app.api.health import router as health_router
 from app.config.settings import settings
+from app.api.prompt import router as prompt_router
 
 app = FastAPI(
     title=settings.APP_NAME,
@@ -12,3 +13,4 @@ app = FastAPI(
 
 app.include_router(health_router)
 app.include_router(chat_router)
+app.include_router(prompt_router)

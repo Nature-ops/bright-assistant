@@ -198,3 +198,29 @@ A professional application should be configurable without changing the source co
 ### Next Goal
 
 Build a logging system for Bright Assistant.
+
+## Topic
+
+AI Provider Architecture
+
+### What I Learned
+
+Today I learned that the application should never depend directly on an AI provider.
+
+Instead, ChatService depends on an abstract provider.
+
+Different AI models can later be swapped without changing the application.
+
+### Key Concepts
+
+- Abstraction
+- Interfaces
+- Separation of concerns
+- Dependency inversion
+- Strategy Pattern
+
+### Biggest Lesson
+
+Build for change.
+
+Software should be easy to extend without rewriting existing code.

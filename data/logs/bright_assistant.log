@@ -29,3 +29,83 @@
 2026-07-08 00:54:57,202 | INFO | bright-assistant | System prompt loaded.
 2026-07-08 00:54:58,578 | INFO | bright-assistant | AI response generated.
 2026-07-08 00:54:58,585 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 12:35:26,136 | INFO | bright-assistant | Received message: what is your duty?
+2026-07-09 12:35:26,145 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 12:35:26,151 | INFO | bright-assistant | System prompt loaded.
+2026-07-09 12:35:27,569 | INFO | bright-assistant | Received message: what is your duty?
+2026-07-09 12:35:27,577 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 12:35:27,578 | INFO | bright-assistant | System prompt loaded.
+2026-07-09 12:36:56,169 | INFO | bright-assistant | Received message: what is your duty?
+2026-07-09 12:36:56,178 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 12:36:56,179 | INFO | bright-assistant | System prompt loaded.
+2026-07-09 13:01:07,341 | INFO | bright-assistant | Received message: who are you?
+2026-07-09 13:01:07,349 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 13:01:10,899 | INFO | bright-assistant | AI response generated.
+2026-07-09 13:01:10,900 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 13:18:33,524 | INFO | bright-assistant | Received message: My name is Bright.
+2026-07-09 13:18:33,525 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 13:18:36,873 | INFO | bright-assistant | AI response generated.
+2026-07-09 13:18:36,874 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 13:19:22,167 | INFO | bright-assistant | Received message: I am studying AWS.
+2026-07-09 13:19:22,168 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 13:19:23,280 | INFO | bright-assistant | AI response generated.
+2026-07-09 13:19:23,281 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 13:20:04,517 | INFO | bright-assistant | Received message: I want to build and modify drone.
+2026-07-09 13:20:04,518 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 13:20:06,823 | INFO | bright-assistant | AI response generated.
+2026-07-09 13:20:06,824 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 13:21:23,868 | INFO | bright-assistant | Received message: what is my name , what am i studying? and what do i want to build?.
+2026-07-09 13:21:23,870 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 13:21:24,604 | INFO | bright-assistant | AI response generated.
+2026-07-09 13:21:24,605 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 16:00:48,924 | INFO | bright-assistant | Received message: My favorite color is blue.?.
+2026-07-09 16:00:48,926 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 16:00:52,637 | INFO | bright-assistant | AI response generated.
+2026-07-09 16:00:52,638 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 16:01:24,618 | INFO | bright-assistant | Received message: can you think outside of the box?.
+2026-07-09 16:01:24,628 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 16:01:26,117 | INFO | bright-assistant | AI response generated.
+2026-07-09 16:01:26,118 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 16:02:48,304 | INFO | bright-assistant | Received message:  can i upload a video for you to watch , learn from it ad replicate ?.
+2026-07-09 16:02:48,316 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 16:02:49,715 | INFO | bright-assistant | AI response generated.
+2026-07-09 16:02:49,716 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 16:06:35,335 | INFO | bright-assistant | Received message: i will try to make this happen
+2026-07-09 16:06:35,345 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 16:06:36,712 | INFO | bright-assistant | AI response generated.
+2026-07-09 16:06:36,714 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 17:45:10,960 | INFO | bright-assistant | Received message: My name is Bright.
+2026-07-09 17:45:10,960 | INFO | bright-assistant | Message classified as: {'type': 'fact', 'category': 'identity'}
+2026-07-09 17:45:10,961 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 17:45:14,822 | INFO | bright-assistant | AI response generated.
+2026-07-09 17:45:14,823 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 17:45:36,215 | INFO | bright-assistant | Received message: I am studying AWS..
+2026-07-09 17:45:36,215 | INFO | bright-assistant | Message classified as: {'type': 'learning', 'category': 'education'}
+2026-07-09 17:45:36,223 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 17:45:37,619 | INFO | bright-assistant | AI response generated.
+2026-07-09 17:45:37,619 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 17:45:40,869 | INFO | bright-assistant | Received message: I am studying AWS..
+2026-07-09 17:45:40,869 | INFO | bright-assistant | Message classified as: {'type': 'learning', 'category': 'education'}
+2026-07-09 17:45:40,881 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 17:45:42,230 | INFO | bright-assistant | AI response generated.
+2026-07-09 17:45:42,230 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 17:46:16,917 | INFO | bright-assistant | Received message: I want to become a cloud engineer.
+2026-07-09 17:46:16,917 | INFO | bright-assistant | Message classified as: {'type': 'goal', 'category': 'personal'}
+2026-07-09 17:46:16,926 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 17:46:18,967 | INFO | bright-assistant | AI response generated.
+2026-07-09 17:46:18,968 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 17:55:20,398 | INFO | bright-assistant | Received message: I want to become a cloud engineer.
+2026-07-09 17:55:20,398 | INFO | bright-assistant | Message classified as: {'type': 'goal', 'category': 'personal'}
+2026-07-09 17:55:20,399 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 17:55:24,687 | INFO | bright-assistant | AI response generated.
+2026-07-09 17:55:24,688 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 18:04:25,400 | INFO | bright-assistant | Received message: I want to become a cloud engineer.
+2026-07-09 18:04:25,401 | INFO | bright-assistant | Message classified as: {'type': 'goal', 'category': 'personal'}
+2026-07-09 18:04:25,402 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 18:04:29,800 | INFO | bright-assistant | AI response generated.
+2026-07-09 18:04:29,801 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-09 18:05:20,844 | INFO | bright-assistant | Received message: I want to become a cloud engineer hoe can you help?.
+2026-07-09 18:05:20,844 | INFO | bright-assistant | Message classified as: {'type': 'goal', 'category': 'personal'}
+2026-07-09 18:05:20,846 | INFO | bright-assistant | User message saved to memory.
+2026-07-09 18:05:23,366 | INFO | bright-assistant | AI response generated.
+2026-07-09 18:05:23,367 | INFO | bright-assistant | Assistant response saved to memory.

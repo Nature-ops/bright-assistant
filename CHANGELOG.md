@@ -47,3 +47,34 @@
 - Connected ChatService to PromptService.
 - Connected PromptService to AI Provider.
 - Simulated AI responses using provider architecture.
+## v0.2.0 - Local AI & Memory
+
+### Added
+
+- Integrated Ollama with Bright Assistant.
+- Added local Llama and Qwen model support.
+- Implemented AI provider abstraction.
+- Created PromptService.
+- Added dynamic prompt loading.
+- Implemented MemoryService.
+- Added persistent conversation storage.
+- Improved logging throughout ChatService.
+- Organized prompt library.
+- Updated project documentation.
+- Added Bright Care to the long-term product vision.
+
+### Improved
+
+- Modular project architecture.
+- Local AI response generation.
+- Configuration management.
+
+## v0.3.0 - Contextual Memory
+
+### Added
+
+- MemoryService for persistent conversation storage.
+- ConversationService to build AI conversations.
+- ChatService refactored into a coordinator.
+- OllamaProvider updated to support full chat history.
+- Bright now remembers previous conversations within stored history.

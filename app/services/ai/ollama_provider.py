@@ -6,20 +6,12 @@ from app.services.ai.base_provider import BaseAIProvider
 
 class OllamaProvider(BaseAIProvider):
 
-    def generate(self, system_prompt: str, user_message: str) -> str:
+    def generate(self, messages: list) -> str:
 
         response = chat(
             model=settings.OLLAMA_MODEL,
-            messages=[
-                {
-                    "role": "system",
-                    "content": system_prompt,
-                },
-                {
-                    "role": "user",
-                    "content": user_message,
-                },
-            ],
+            messages=messages
+            
         )
 
         return response["message"]["content"]

@@ -265,3 +265,13 @@ Services perform work.
 Models define data.
 
 Main creates the application.
+## Engineering Checklist
+
+Before implementing any feature:
+
+- [ ] What responsibility does this feature have?
+- [ ] Which service owns it?
+- [ ] Will this still make sense one year from now?
+- [ ] Does it follow the Single Responsibility Principle?
+- [ ] Can another module reuse it?
+- [ ] If this component changed tomorrow, what would break?

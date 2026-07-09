@@ -460,3 +460,23 @@ Current capabilities:
 Today marked the transition of Bright Assistant from a simple chatbot into a real AI platform.
 
 The architecture is becoming stable, modular, and scalable. The project now has a solid foundation for future features including RAG, autonomous agents, cloud integration, and specialized AI assistants such as Bright Care.
+
+
+## BA-009 - Contextual Memory
+
+Today's goal was to transition Bright from a stateless chatbot into a conversational AI assistant.
+
+Completed:
+- Refactored AI providers to accept message history.
+- Added ConversationService.
+- Integrated MemoryService into ChatService.
+- Connected PromptService, MemoryService and OllamaProvider.
+- Successfully verified contextual memory using Ollama.
+
+Result:
+Bright now remembers previous interactions and can answer follow-up questions using conversation history.
+
+Lessons Learned:
+- Separation of concerns makes refactoring easier.
+- Conversation construction belongs in its own service.
+- Small architectural changes early prevent major refactoring later.

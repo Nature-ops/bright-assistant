@@ -8,12 +8,20 @@ class MemoryService:
         self.memory_file = Path("data/conversation.json")
 
         if not self.memory_file.exists():
-            self.memory_file.write_text("[]", encoding="utf-8")
+            self.memory_file.write_text(
+                "[]",
+                encoding="utf-8"
+            )
 
     def load(self):
 
         try:
-            with open(self.memory_file, "r", encoding="utf-8") as file:
+            with open(
+                self.memory_file,
+                "r",
+                encoding="utf-8"
+            ) as file:
+
                 return json.load(file)
 
         except (json.JSONDecodeError, FileNotFoundError):
@@ -21,7 +29,12 @@ class MemoryService:
 
     def save(self, messages):
 
-        with open(self.memory_file, "w", encoding="utf-8") as file:
+        with open(
+            self.memory_file,
+            "w",
+            encoding="utf-8"
+        ) as file:
+
             json.dump(
                 messages,
                 file,
@@ -41,7 +54,28 @@ class MemoryService:
         self.save(history)
 
     def history(self):
+
         return self.load()
 
+    def recent(self, limit: int = 20):
+
+        history = self.load()
+
+        return history[-limit:]
+
+    def count(self) -> int:
+
+        return len(self.load())
+
+    def stats(self):
+
+        history = self.load()
+
+        return {
+            "messages": len(history),
+            "file": str(self.memory_file)
+        }
+
     def clear(self):
+
         self.save([])

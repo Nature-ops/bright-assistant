@@ -1,6 +1,9 @@
 import json
 from pathlib import Path
 
+from app.core.state.cognitive_state import Classification
+
+
 
 class KnowledgeService:
 
@@ -61,12 +64,14 @@ class KnowledgeService:
 
     def process_memory(
         self,
-        classification: dict,
+        classification: Classification,
         message: str
     ):
+        
 
-        action = classification["action"]
-        memory_type = classification["memory_type"]
+
+        action = classification.action
+        memory_type = classification.memory_type
 
         entry = {
             "content": message
@@ -82,6 +87,7 @@ class KnowledgeService:
             "contact": "contacts",
             "event": "events",
             "achievement": "achievements"
+        
         }
 
         if action == "create":
@@ -167,3 +173,4 @@ class KnowledgeService:
             "Events": self.get_events(),
             "Achievements": self.get_achievements()
         }
+

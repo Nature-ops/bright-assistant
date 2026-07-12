@@ -1,3 +1,7 @@
+from app.core.state.cognitive_state import Classification
+
+
+
 class MemoryClassifier:
 
     def __init__(self):
@@ -70,7 +74,7 @@ class MemoryClassifier:
             }
         }
 
-    def classify(self, message: str) -> dict:
+    def classify(self, message: str) -> Classification:
 
         text = message.lower()
 
@@ -80,20 +84,21 @@ class MemoryClassifier:
 
                 if keyword in text:
 
-                    return {
-                        "intent": "store",
-                        "memory_type": memory_type,
-                        "category": rule["category"],
-                        "importance": rule["importance"],
-                        "confidence": 1.0,
-                        "action": "create"
-                    }
+                    return Classification(
+                        intent="store",
+                        memory_type=memory_type,
+                        category=rule["category"],
+                        importance=rule["importance"],
+                        confidence=1.0,
+                        action="create",
+                    )
 
-        return {
-            "intent": "conversation",
-            "memory_type": "conversation",
-            "category": "general",
-            "importance": "low",
-            "confidence": 1.0,
-            "action": "ignore"
-        }
+        # Only return this after ALL rules have been checked.
+        return Classification(
+            intent="conversation",
+            memory_type="conversation",
+            category="general",
+            importance="low",
+            confidence=1.0,
+            action="ignore",
+        )

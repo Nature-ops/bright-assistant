@@ -1,13 +1,13 @@
 class ReasoningService:
 
-    def summarize_user(self, knowledge: dict) -> str:
+    def summarize_user(self, context: dict) -> str:
 
         lines = [
             "Here's what I know about you.",
             ""
         ]
 
-        for title, items in knowledge.items():
+        for title, items in context.items():
 
             if not items:
                 continue
@@ -25,10 +25,10 @@ class ReasoningService:
 
         return "\n".join(lines)
 
-    def recommend_learning(self, knowledge: dict) -> str:
+    def recommend_learning(self, context: dict) -> str:
 
-        learning = knowledge.get("Learning", [])
-        goals = knowledge.get("Goals", [])
+        learning = context.get("Learning", [])
+        goals = context.get("Goals", [])
 
         if not learning:
             return (
@@ -62,9 +62,9 @@ class ReasoningService:
 
         return "\n".join(lines)
 
-    def recommend_tasks(self, knowledge: dict) -> str:
+    def recommend_tasks(self, context: dict) -> str:
 
-        tasks = knowledge.get("Tasks", [])
+        tasks = context.get("Tasks", [])
 
         if not tasks:
             return (

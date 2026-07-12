@@ -145,3 +145,17 @@ Planned
 □ Decision Engine
 
 □ Tool Engine
+
+## Bright Principle
+
+Every sprint should increase Bright's ability to think, remember, reason, or act independently.
+
+The goal is not to add more features.
+
+The goal is to reduce dependence on external guidance over time.
+
+## Open for Extension
+
+Every engine should allow new capabilities to be added with minimal changes to existing code.
+
+Bright should grow by extending components rather than rewriting them.

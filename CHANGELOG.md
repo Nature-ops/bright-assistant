@@ -180,3 +180,19 @@ ConversationService
 ↓
 
 AI Provider
+
+## v0.5.1-alpha
+
+### Added
+
+- Reflection Engine
+- Reflection Rules
+- Insight model
+- Insight Service
+- Insights datastore
+- Cognitive reflection architecture
+
+### Improved
+
+- Continued CognitiveState migration
+- Expanded Bright Cognitive Core

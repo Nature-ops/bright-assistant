@@ -263,3 +263,93 @@
 2026-07-11 15:21:23,405 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
 2026-07-11 15:21:23,406 | INFO | bright-assistant | Memory evolution: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
 2026-07-11 15:21:23,406 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-11 15:33:12,217 | INFO | bright-assistant | Received message: What do you know about me?
+2026-07-11 15:33:12,218 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-11 15:33:12,218 | INFO | bright-assistant | Memory evolution: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-11 15:33:12,218 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-11 15:33:32,548 | INFO | bright-assistant | Received message: What am I studying?
+2026-07-11 15:33:32,548 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-11 15:33:32,548 | INFO | bright-assistant | Memory evolution: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-11 15:33:32,549 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-11 15:34:30,073 | INFO | bright-assistant | Received message: I passed my first python code exams?
+2026-07-11 15:34:30,073 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-11 15:34:30,073 | INFO | bright-assistant | Memory evolution: {'intent': 'store', 'memory_type': 'achievement', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'create'}
+2026-07-11 15:34:30,074 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-11 15:34:30,084 | INFO | bright-assistant | User message saved to memory.
+2026-07-11 15:34:34,244 | INFO | bright-assistant | AI response generated.
+2026-07-11 15:34:34,246 | INFO | bright-assistant | Assistant response saved to memory.
+2026-07-12 18:56:25,557 | INFO | bright-assistant | Received message: What am I studying?
+2026-07-12 18:56:25,557 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-12 18:56:25,557 | INFO | bright-assistant | Memory evolution: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-12 18:56:25,558 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 18:56:38,657 | INFO | bright-assistant | Received message: What do you know about me?
+2026-07-12 18:56:38,658 | INFO | bright-assistant | Message classified as: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-12 18:56:38,658 | INFO | bright-assistant | Memory evolution: {'intent': 'conversation', 'memory_type': 'conversation', 'category': 'general', 'importance': 'low', 'confidence': 1.0, 'action': 'ignore'}
+2026-07-12 18:56:38,658 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:23:29,410 | INFO | bright-assistant | Received message: My name is Bright
+2026-07-12 21:23:29,410 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='fact', action='create', category='identity', confidence=1.0, importance='high')
+2026-07-12 21:23:29,411 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='fact', action='create', category='identity', confidence=1.0, importance='high')
+2026-07-12 21:23:29,411 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:23:29,422 | INFO | bright-assistant | User message saved.
+2026-07-12 21:23:37,324 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:24:00,621 | INFO | bright-assistant | Received message: I am studying AWS
+2026-07-12 21:24:00,621 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='learning', action='create', category='education', confidence=1.0, importance='high')
+2026-07-12 21:24:00,621 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='learning', action='create', category='education', confidence=1.0, importance='high')
+2026-07-12 21:24:00,622 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:24:00,632 | INFO | bright-assistant | User message saved.
+2026-07-12 21:24:03,291 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:24:14,124 | INFO | bright-assistant | Received message: I want to become an AWS Solutions Architect
+2026-07-12 21:24:14,124 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='goal', action='create', category='personal', confidence=1.0, importance='high')
+2026-07-12 21:24:14,125 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='goal', action='create', category='personal', confidence=1.0, importance='high')
+2026-07-12 21:24:14,126 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:24:14,135 | INFO | bright-assistant | User message saved.
+2026-07-12 21:24:17,054 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:24:41,739 | INFO | bright-assistant | Received message: I am building Bright Sports
+2026-07-12 21:24:41,740 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='project', action='create', category='development', confidence=1.0, importance='high')
+2026-07-12 21:24:41,740 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='project', action='create', category='development', confidence=1.0, importance='high')
+2026-07-12 21:24:41,741 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:24:41,751 | INFO | bright-assistant | User message saved.
+2026-07-12 21:24:44,769 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:24:45,994 | INFO | bright-assistant | Received message: I am building Bright Sports
+2026-07-12 21:24:45,994 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='project', action='create', category='development', confidence=1.0, importance='high')
+2026-07-12 21:24:45,995 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='project', action='create', category='development', confidence=1.0, importance='high')
+2026-07-12 21:24:45,996 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:24:46,005 | INFO | bright-assistant | User message saved.
+2026-07-12 21:24:48,552 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:25:05,148 | INFO | bright-assistant | Received message: I need to finish my Terraform lab
+2026-07-12 21:25:05,148 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='task', action='create', category='productivity', confidence=1.0, importance='medium')
+2026-07-12 21:25:05,148 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='task', action='create', category='productivity', confidence=1.0, importance='medium')
+2026-07-12 21:25:05,149 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:25:05,159 | INFO | bright-assistant | User message saved.
+2026-07-12 21:25:07,841 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 21:25:10,073 | INFO | bright-assistant | Received message: I need to finish my Terraform lab
+2026-07-12 21:25:10,074 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='task', action='create', category='productivity', confidence=1.0, importance='medium')
+2026-07-12 21:25:10,074 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='task', action='create', category='productivity', confidence=1.0, importance='medium')
+2026-07-12 21:25:10,075 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 21:25:10,084 | INFO | bright-assistant | User message saved.
+2026-07-12 21:25:12,507 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 22:40:15,511 | INFO | bright-assistant | Received message: I completed my Terraform course.
+2026-07-12 22:40:15,512 | INFO | bright-assistant | Classification: Classification(intent='conversation', memory_type='conversation', action='ignore', category='general', confidence=1.0, importance='low')
+2026-07-12 22:40:15,512 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='achievement', action='create', category='general', confidence=1.0, importance='low')
+2026-07-12 22:40:15,513 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 22:40:15,513 | INFO | bright-assistant | Reflection: Achievement detected.
+2026-07-12 22:40:15,515 | INFO | bright-assistant | User message saved.
+2026-07-12 22:40:19,575 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 22:40:58,400 | INFO | bright-assistant | Received message: I passed my AWS Solutions Architect exam.
+2026-07-12 22:40:58,400 | INFO | bright-assistant | Classification: Classification(intent='conversation', memory_type='conversation', action='ignore', category='general', confidence=1.0, importance='low')
+2026-07-12 22:40:58,400 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='achievement', action='create', category='general', confidence=1.0, importance='low')
+2026-07-12 22:40:58,401 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 22:40:58,402 | INFO | bright-assistant | Reflection: Achievement detected.
+2026-07-12 22:40:58,403 | INFO | bright-assistant | User message saved.
+2026-07-12 22:41:00,310 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 22:41:27,205 | INFO | bright-assistant | Received message: Hello Bright, how are you?
+2026-07-12 22:41:27,205 | INFO | bright-assistant | Classification: Classification(intent='conversation', memory_type='conversation', action='ignore', category='general', confidence=1.0, importance='low')
+2026-07-12 22:41:27,206 | INFO | bright-assistant | Evolution: Classification(intent='conversation', memory_type='conversation', action='ignore', category='general', confidence=1.0, importance='low')
+2026-07-12 22:41:27,208 | INFO | bright-assistant | User message saved.
+2026-07-12 22:41:28,521 | INFO | bright-assistant | Assistant response saved.
+2026-07-12 22:41:56,934 | INFO | bright-assistant | Received message: I learned about Docker volumes today.
+2026-07-12 22:41:56,935 | INFO | bright-assistant | Classification: Classification(intent='store', memory_type='learning', action='create', category='education', confidence=1.0, importance='high')
+2026-07-12 22:41:56,935 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='learning', action='create', category='education', confidence=1.0, importance='high')
+2026-07-12 22:41:56,935 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-12 22:41:56,937 | INFO | bright-assistant | User message saved.
+2026-07-12 22:41:59,272 | INFO | bright-assistant | Assistant response saved.

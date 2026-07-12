@@ -315,3 +315,7 @@ Every service should be replaceable without changing the rest of the platform.
 ## 6. Build for the Long Term
 
 Every architectural decision should still make sense one year from now.
+
+## Bright Principle #11
+
+Every cognitive engine must increase Bright's understanding, not just process data.

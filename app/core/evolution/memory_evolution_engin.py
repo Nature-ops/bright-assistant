@@ -1,10 +1,13 @@
+from app.core.state.cognitive_state import Classification
+
+
 class MemoryEvolutionEngine:
 
     def evolve(
         self,
-        classification: dict,
+        classification: Classification,
         message: str
-    ) -> dict:
+    ) -> Classification:
 
         text = message.lower()
 
@@ -14,8 +17,8 @@ class MemoryEvolutionEngine:
             or "i finished" in text
         ):
 
-            classification["intent"] = "store"
-            classification["memory_type"] = "achievement"
-            classification["action"] = "create"
+            classification.intent = "store"
+            classification.memory_type = "achievement"
+            classification.action = "create"
 
         return classification

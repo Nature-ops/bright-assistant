@@ -1,11 +1,25 @@
 {
-    "facts": [],
+    "facts": [
+        {
+            "content": "My name is Bright"
+        }
+    ],
     "goals": [
         {
             "content": "I want to become an AWS Solutions Architect."
+        },
+        {
+            "content": "I want to become an AWS Solutions Architect"
         }
     ],
-    "projects": [],
+    "projects": [
+        {
+            "content": "I am building Bright Sports"
+        },
+        {
+            "content": "I am building Bright Sports"
+        }
+    ],
     "learning": [
         {
             "content": "I am studying AWS"
@@ -18,6 +32,12 @@
         },
         {
             "content": "I am studying AWS"
+        },
+        {
+            "content": "I am studying AWS"
+        },
+        {
+            "content": "I learned about Docker volumes today."
         }
     ],
     "preferences": [
@@ -28,15 +48,26 @@
     "tasks": [
         {
             "content": "remind me to study at night."
+        },
+        {
+            "content": "I need to finish my Terraform lab"
+        },
+        {
+            "content": "I need to finish my Terraform lab"
         }
     ],
     "contacts": [],
     "events": [],
-    "archivements": [],
     "memories": [],
     "achievements": [
         {
             "content": "I passed my first python code exams?"
+        },
+        {
+            "content": "I completed my Terraform course."
+        },
+        {
+            "content": "I passed my AWS Solutions Architect exam."
         }
     ]
 }

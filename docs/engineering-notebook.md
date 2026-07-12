@@ -1194,3 +1194,21 @@ Objectives:
 - Implement first memory evolution rule.
 - Add achievement memories.
 - Begin duplicate detection.
+
+## BCC-009 - Reflection Foundation
+
+### Completed
+
+- Created Reflection Engine.
+- Added Reflection Rules.
+- Added Insight model.
+- Created insights.json datastore.
+- Implemented InsightService foundation.
+- Verified Reflection detects achievements.
+- Continued migration to CognitiveState architecture.
+
+### Next Sprint
+
+- Integrate InsightService into ReflectionEngine.
+- Generate and persist real insights.
+- Feed insights into ReasoningEngine.

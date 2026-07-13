@@ -11,7 +11,9 @@ class Classification:
     category: str
     confidence: float
     importance: str
+    source: str
 
+    
 
 @dataclass
 class Context:

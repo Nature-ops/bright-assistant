@@ -1,5 +1,5 @@
 from app.core.state.cognitive_state import Classification
-
+from app.utils.logger import logger
 
 
 class MemoryClassifier:
@@ -84,21 +84,37 @@ class MemoryClassifier:
 
                 if keyword in text:
 
-                    return Classification(
+                    classification = Classification(
                         intent="store",
                         memory_type=memory_type,
                         category=rule["category"],
                         importance=rule["importance"],
                         confidence=1.0,
                         action="create",
+                        source="rule_engine"
                     )
 
+                    logger.info(
+                        f"Classification created: {classification.memory_type} "
+                        f"(source={classification.source})"
+                    )
+
+                    return classification
+
         # Only return this after ALL rules have been checked.
-        return Classification(
+        classification = Classification(
             intent="conversation",
             memory_type="conversation",
             category="general",
             importance="low",
             confidence=1.0,
             action="ignore",
+            source="rule_engine"
         )
+
+        logger.info(
+            "Classification created: conversation"
+            f"(source={classification.source})"
+        )
+
+        return classification

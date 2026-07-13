@@ -1,9 +1,5 @@
 from app.core.context.context_engine import ContextEngine
-from app.core.evolution.memory_evolution_engin import MemoryEvolutionEngine
-from app.core.classification.memory_classifier import MemoryClassifier
 from app.core.reasoning.reasoning_service import ReasoningService
-from app.core.routing.intent_router import IntentRouter
-from app.core.state.cognitive_state import (CognitiveState,Classification,)
 from app.core.reflection.reflection_engine import ReflectionEngine
 from app.services.ai.ollama_provider import OllamaProvider
 from app.services.conversation_service import ConversationService
@@ -11,7 +7,8 @@ from app.services.knowledge_service import KnowledgeService
 from app.services.memory_service import MemoryService
 from app.services.prompt_service import PromptService
 from app.utils.logger import logger
-
+from app.core.pipeline.cognitive_pipeline import CognitivePipeline
+from app.core.state.cognitive_state import CognitiveState
 
 
 
@@ -24,14 +21,6 @@ class ChatService:
 
         self.provider = OllamaProvider()
 
-        self.router = IntentRouter()
-
-        self.classifier = MemoryClassifier()
-
-        self.evolution = MemoryEvolutionEngine()
-
-        self.context = ContextEngine()
-
         self.reasoning = ReasoningService()
 
         self.knowledge_service = KnowledgeService()
@@ -43,6 +32,10 @@ class ChatService:
         self.conversation = ConversationService()
         
         self.reflection = ReflectionEngine()
+
+        self.pipeline = CognitivePipeline()
+
+        self.context = ContextEngine()
 
 
 
@@ -60,44 +53,19 @@ class ChatService:
             message=message
         )
 
-        # -------------------------------------------------
-        # Intent Routing
-        # -------------------------------------------------
 
-        state.intent = self.router.route(
-            state.message
-        )
+        #--------------------------------------------------
+        # Cognitive Pipeline
+        #--------------------------------------------------
 
-        # -------------------------------------------------
-        # Classification
-        # -------------------------------------------------
-
-        state.classification = self.classifier.classify(
-            state.message
-        )
-
-        logger.info(
-            f"Classification: {state.classification}"
-        )
-
-        # -------------------------------------------------
-        # Memory Evolution
-        # -------------------------------------------------
-
-        state.classification = self.evolution.evolve(
-            state.classification,
-            state.message
-        )
-
-        logger.info(
-            f"Evolution: {state.classification}"
-        )
+        state = self.pipeline.run(state)
+    
 
         # -------------------------------------------------
         # Store Memory
         # -------------------------------------------------
 
-        if state.classification.intent == "store":
+        if state.classification and state.classification.intent == "store":
             self.knowledge_service.process_memory(
                 state.classification,
                 state.message

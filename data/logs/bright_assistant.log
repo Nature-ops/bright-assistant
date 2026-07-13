@@ -371,3 +371,10 @@
 2026-07-13 11:40:06,896 | INFO | bright-assistant | Reflection : Learning milstone insight created.
 2026-07-13 11:40:06,905 | INFO | bright-assistant | User message saved.
 2026-07-13 11:40:13,442 | INFO | bright-assistant | Assistant response saved.
+2026-07-13 13:50:48,837 | INFO | bright-assistant | Received message: I completed my Terraform course.
+2026-07-13 13:50:48,838 | INFO | bright-assistant | Classification: Classification(intent='conversation', memory_type='conversation', action='ignore', category='general', confidence=1.0, importance='low')
+2026-07-13 13:50:48,838 | INFO | bright-assistant | Evolution: Classification(intent='store', memory_type='achievement', action='create', category='general', confidence=1.0, importance='low')
+2026-07-13 13:50:48,839 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-13 13:50:48,840 | INFO | bright-assistant | Reflection created achievement insight: Achievement
+2026-07-13 13:50:48,841 | INFO | bright-assistant | User message saved.
+2026-07-13 13:50:52,685 | INFO | bright-assistant | Assistant response saved.

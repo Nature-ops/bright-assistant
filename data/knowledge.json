@@ -38,6 +38,9 @@
         },
         {
             "content": "I learned about Docker volumes today."
+        },
+        {
+            "content": "I am studying Kubernetes."
         }
     ],
     "preferences": [
@@ -77,6 +80,9 @@
         },
         {
             "content": "I completed my Terraform course."
+        },
+        {
+            "content": "I passed my Docker certification."
         }
     ]
 }

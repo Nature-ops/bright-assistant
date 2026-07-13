@@ -1,15 +1,18 @@
-from app.core.state.cognitive_state import Classification
+from app.core.state.cognitive_state import CognitiveState
+from app.utils.logger import logger
 
 
 class MemoryEvolutionEngine:
 
-    def evolve(
+    def process(
         self,
-        classification: Classification,
-        message: str
-    ) -> Classification:
+        state: CognitiveState
+    ) -> CognitiveState:
 
-        text = message.lower()
+        text = state.message.lower()
+
+        if state.classification is None:
+            return state
 
         if (
             "i passed" in text
@@ -17,8 +20,12 @@ class MemoryEvolutionEngine:
             or "i finished" in text
         ):
 
-            classification.intent = "store"
-            classification.memory_type = "achievement"
-            classification.action = "create"
+            state.classification.intent = "store"
+            state.classification.memory_type = "achievement"
+            state.classification.action = "create"
 
-        return classification
+            logger.info(
+                "Evolution: learning achievement detected."
+            )
+
+        return state

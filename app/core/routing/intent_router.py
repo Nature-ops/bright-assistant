@@ -1,3 +1,5 @@
+from app.utils.logger import logger
+
 class IntentRouter:
 
     def route(self, message: str) -> str:
@@ -9,6 +11,9 @@ class IntentRouter:
 
         if "what do you know about me" in text:
             return "knowledge_summary"
+        
+
+        logger.info(f"Intent routed: {text}")
 
         return "conversation"
     

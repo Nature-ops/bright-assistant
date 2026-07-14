@@ -215,3 +215,20 @@ process()
 → create()
 → store()
 → return state
+
+
+## BCC-010 - Cognitive Pipeline
+
+### Added
+
+- Introduced CognitivePipeline.
+- Migrated Intent Routing into the pipeline.
+- Migrated Memory Classification into the pipeline.
+- Migrated Memory Evolution into the pipeline.
+- Added Classification source tracking.
+- Improved engine responsibility separation.
+
+### Refactored
+
+- ChatService now delegates cognitive processing to the pipeline.
+- Reduced ChatService complexity.

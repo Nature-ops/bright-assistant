@@ -378,3 +378,24 @@
 2026-07-13 13:50:48,840 | INFO | bright-assistant | Reflection created achievement insight: Achievement
 2026-07-13 13:50:48,841 | INFO | bright-assistant | User message saved.
 2026-07-13 13:50:52,685 | INFO | bright-assistant | Assistant response saved.
+2026-07-13 19:51:25,165 | INFO | bright-assistant | Received message: Hello Bright.
+2026-07-13 19:51:25,165 | INFO | bright-assistant | Intent routed: hello bright.
+2026-07-13 19:51:25,166 | INFO | bright-assistant | Classification created: conversation(source=rule_engine)
+2026-07-13 19:51:25,175 | INFO | bright-assistant | User message saved.
+2026-07-13 19:51:32,893 | INFO | bright-assistant | Assistant response saved.
+2026-07-13 19:51:49,809 | INFO | bright-assistant | Received message: I am studying Kubernetes.
+2026-07-13 19:51:49,810 | INFO | bright-assistant | Intent routed: i am studying kubernetes.
+2026-07-13 19:51:49,810 | INFO | bright-assistant | Classification created: learning (source=rule_engine)
+2026-07-13 19:51:49,818 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-13 19:51:49,820 | INFO | bright-assistant | User message saved.
+2026-07-13 19:51:51,233 | INFO | bright-assistant | Assistant response saved.
+2026-07-13 19:52:03,034 | INFO | bright-assistant | Received message: I passed my Docker certification.
+2026-07-13 19:52:03,034 | INFO | bright-assistant | Intent routed: i passed my docker certification.
+2026-07-13 19:52:03,034 | INFO | bright-assistant | Classification created: conversation(source=rule_engine)
+2026-07-13 19:52:03,034 | INFO | bright-assistant | Evolution: learning achievement detected.
+2026-07-13 19:52:03,035 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-13 19:52:03,037 | INFO | bright-assistant | Reflection created achievement insight: Achievement
+2026-07-13 19:52:03,038 | INFO | bright-assistant | User message saved.
+2026-07-13 19:52:04,700 | INFO | bright-assistant | Assistant response saved.
+2026-07-13 19:52:14,872 | INFO | bright-assistant | Received message: What do you know about me?
+2026-07-13 19:52:14,873 | INFO | bright-assistant | Classification created: conversation(source=rule_engine)

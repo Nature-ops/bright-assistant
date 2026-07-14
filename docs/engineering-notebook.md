@@ -1255,3 +1255,27 @@ Bright now contains:
 ### Improved
 
 - Cognitive pipeline now generates derived knowledge.
+
+
+
+
+## Cognitive Pipeline
+
+Today Bright gained a dedicated Cognitive Pipeline.
+
+Current Pipeline:
+
+- Intent Routing
+- Memory Classification
+- Memory Evolution
+
+ChatService is now becoming a coordinator instead of containing cognitive logic.
+
+Future engines:
+
+- Knowledge
+- Reflection
+- Context
+- Reasoning
+- Planning
+- Decision

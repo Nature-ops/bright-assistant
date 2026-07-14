@@ -4,10 +4,9 @@ from app.core.routing.intent_router import IntentRouter
 from app.core.classification.memory_classifier import MemoryClassifier
 from app.core.evolution.memory_evolution_engin import MemoryEvolutionEngine
 from app.core.context.context_engine import ContextEngine
-from app.core.reasoning.reasoning_service import ReasoningService
+from app.core.reasoning.reasoning_engine import ReasoningEngine
 from app.core.reflection.reflection_engine import ReflectionEngine
-from app.services.knowledge_service import KnowledgeService
-
+from app.core.knowledge.knowledge_engine import KnowledgeEngine
 logger = logging.getLogger(__name__)
 
 
@@ -25,9 +24,12 @@ class CognitivePipeline:
 
         self.reflection = ReflectionEngine()
 
-        self.reasoning = ReasoningService()
+        self.reasoning = ReasoningEngine()
 
-        self.knowledge = KnowledgeService()
+
+        self.knowledge = KnowledgeEngine()
+
+        
 
     def run(
         self,
@@ -38,16 +40,19 @@ class CognitivePipeline:
         # Intent Routing
         # -----------------------------------
 
-        state.intent = self.router.route(
-            state.message
+        state = self.router.process(
+            state
         )
+
+
+        
 
         # -------------------------------------------------
          # Classification
         # -------------------------------------------------
 
-        state.classification = self.classifier.classify(
-            state.message
+        state = self.classifier.process(
+            state
         )
 
         #-------------------------
@@ -59,4 +64,37 @@ class CognitivePipeline:
         )
 
 
+        # -------------------------------------------------
+        # Knowledge
+        # -------------------------------------------------
+
+        state = self.knowledge.process(
+        state
+        )
+
+        # -------------------------------------------------
+        # Reflection
+        # -------------------------------------------------
+
+        state = self.reflection.process(
+        state
+        )
+
+
+        # -------------------------------------------------
+        # Context
+        # -------------------------------------------------
+
+        state = self.context.process(state)
+
+
+        # -------------------------------------------------
+        # Reasoning
+        # -------------------------------------------------
+
+        state = self.reasoning.process(state)
+
         return state
+
+
+        

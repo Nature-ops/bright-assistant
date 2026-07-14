@@ -41,6 +41,9 @@
         },
         {
             "content": "I am studying Kubernetes."
+        },
+        {
+            "content": "I am learning Kubernetes."
         }
     ],
     "preferences": [
@@ -83,6 +86,15 @@
         },
         {
             "content": "I passed my Docker certification."
+        },
+        {
+            "content": "I passed my Python certification."
+        },
+        {
+            "content": "I passed my Python certification."
+        },
+        {
+            "content": "I passed my Python certification."
         }
     ]
 }

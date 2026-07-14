@@ -23,6 +23,30 @@
             "confidence": 0.9,
             "source": "reflection",
             "created_at": "2026-07-13T17:52:03.035205+00:00"
+        },
+        {
+            "title": "Achievement",
+            "description": "User achieved an important milestone",
+            "category": "achievement",
+            "confidence": 0.9,
+            "source": "reflection",
+            "created_at": "2026-07-14T09:02:02.609972+00:00"
+        },
+        {
+            "title": "Achievement",
+            "description": "User achieved an important milestone",
+            "category": "achievement",
+            "confidence": 0.9,
+            "source": "reflection",
+            "created_at": "2026-07-14T09:11:17.438965+00:00"
+        },
+        {
+            "title": "Achievement",
+            "description": "User achieved an important milestone",
+            "category": "achievement",
+            "confidence": 0.9,
+            "source": "reflection",
+            "created_at": "2026-07-14T16:44:52.515950+00:00"
         }
     ]
 }

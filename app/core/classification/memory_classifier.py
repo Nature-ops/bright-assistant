@@ -1,5 +1,6 @@
 from app.core.state.cognitive_state import Classification
 from app.utils.logger import logger
+from app.core.state.cognitive_state import (CognitiveState,Classification,)
 
 
 class MemoryClassifier:
@@ -74,9 +75,12 @@ class MemoryClassifier:
             }
         }
 
-    def classify(self, message: str) -> Classification:
+    def process(
+        self,
+        state: CognitiveState
+    ) -> CognitiveState:
 
-        text = message.lower()
+        text = state.message.lower()
 
         for memory_type, rule in self.rules.items():
 
@@ -84,7 +88,7 @@ class MemoryClassifier:
 
                 if keyword in text:
 
-                    classification = Classification(
+                    state.classification = Classification(
                         intent="store",
                         memory_type=memory_type,
                         category=rule["category"],
@@ -95,14 +99,14 @@ class MemoryClassifier:
                     )
 
                     logger.info(
-                        f"Classification created: {classification.memory_type} "
-                        f"(source={classification.source})"
+                        f"Classification created: {state.classification.memory_type}"
+                        
                     )
 
-                    return classification
+                    return state
 
         # Only return this after ALL rules have been checked.
-        classification = Classification(
+        state.classification = Classification(
             intent="conversation",
             memory_type="conversation",
             category="general",
@@ -114,7 +118,7 @@ class MemoryClassifier:
 
         logger.info(
             "Classification created: conversation"
-            f"(source={classification.source})"
+            
         )
 
-        return classification
+        return state

@@ -1279,3 +1279,15 @@ Future engines:
 - Reasoning
 - Planning
 - Decision
+
+
+## BCC-013
+
+Completed migration of ContextEngine and ReasoningEngine into the Cognitive Pipeline.
+
+Highlights:
+- Standardized all cognitive engines with process(state).
+- Context is now built inside the pipeline.
+- Reasoning produces state.response.
+- ChatService responsibilities reduced further.
+- Cognitive Pipeline now owns the complete cognitive flow.

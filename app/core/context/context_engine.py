@@ -1,20 +1,42 @@
+from app.core.state.cognitive_state import (CognitiveState,Context,)
+from app.services.knowledge_service import KnowledgeService
+
+
+
 class ContextEngine:
 
-    def build(
+    def __init__(self):
+
+        self.knowledge_service = KnowledgeService()
+
+    def process(
         self,
-        intent: str,
-        knowledge: dict
-    ) -> dict:
+        state: CognitiveState
+    ) -> CognitiveState:
+        
+        knowledge = self.knowledge_service.get_all()
 
-        if intent == "learning":
+        if state.intent == "learning":
 
-            return {
-                "Learning": knowledge["Learning"],
-                "Goals": knowledge["Goals"]
-            }
+            state.context = Context(
+                knowledge=knowledge,
+                learning=knowledge["Learning"],
+                goals=knowledge["Goals"]
+            )
 
-        if intent == "knowledge_summary":
+        elif state.intent == "knowledge_summary":
 
-            return knowledge
+            state.context = Context(
+                 knowledge=knowledge
+            )
 
-        return {}
+        else:
+
+            state.context = Context(
+                knowledge={}
+             )
+            
+
+          
+
+        return state   

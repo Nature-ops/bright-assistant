@@ -1,6 +1,5 @@
 from app.core.context.context_engine import ContextEngine
-from app.core.reasoning.reasoning_service import ReasoningService
-from app.core.reflection.reflection_engine import ReflectionEngine
+from app.core.reasoning.reasoning_engine import ReasoningEngine
 from app.services.ai.ollama_provider import OllamaProvider
 from app.services.conversation_service import ConversationService
 from app.services.knowledge_service import KnowledgeService
@@ -21,7 +20,7 @@ class ChatService:
 
         self.provider = OllamaProvider()
 
-        self.reasoning = ReasoningService()
+        self.reasoning = ReasoningEngine()
 
         self.knowledge_service = KnowledgeService()
 
@@ -31,11 +30,13 @@ class ChatService:
 
         self.conversation = ConversationService()
         
-        self.reflection = ReflectionEngine()
+        
 
         self.pipeline = CognitivePipeline()
 
         self.context = ContextEngine()
+
+        
 
 
 
@@ -54,62 +55,24 @@ class ChatService:
         )
 
 
-        #--------------------------------------------------
+        #---------------------------------------------------
         # Cognitive Pipeline
-        #--------------------------------------------------
+        #---------------------------------------------------
 
         state = self.pipeline.run(state)
-    
 
-        # -------------------------------------------------
-        # Store Memory
-        # -------------------------------------------------
-
-        if state.classification and state.classification.intent == "store":
-            self.knowledge_service.process_memory(
-                state.classification,
-                state.message
-            )
-
-            logger.info(
-                "Knowledge stored successfully."
-            )
+        logger.info(
+            "Cognetive Pipeline completed."
+        )
 
 
-
-            state = self.reflection.process(
-                state
-            )
-
+      
         # -------------------------------------------------
         # Intent Handlers
         # -------------------------------------------------
 
-        handlers = {
-
-            "learning": self.reasoning.recommend_learning,
-
-            "knowledge_summary": self.reasoning.summarize_user,
-
-        }
-
-        handler = handlers.get(
-            state.intent
-        )
-
-        if handler:
-
-            knowledge = self.knowledge_service.get_all()
-
-            context = self.context.build(
-                state.intent,
-                knowledge
-            )
-
-            return handler(
-                context
-            )
-
+        if state.response:
+            return state.response.message
         # -------------------------------------------------
         # Continue Normal Conversation
         # -------------------------------------------------

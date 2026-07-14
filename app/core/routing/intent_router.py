@@ -1,20 +1,30 @@
+from app.core.state.cognitive_state import CognitiveState
 from app.utils.logger import logger
+
 
 class IntentRouter:
 
-    def route(self, message: str) -> str:
+    def process(
+        self,
+        state: CognitiveState
+    ) -> CognitiveState:
 
-        text = message.lower()
+        text = state.message.lower()
 
         if "what am i studying" in text:
-            return "learning"
 
-        if "what do you know about me" in text:
-            return "knowledge_summary"
-        
+            state.intent = "learning"
 
-        logger.info(f"Intent routed: {text}")
+        elif "what do you know about me" in text:
 
-        return "conversation"
-    
+            state.intent = "knowledge_summary"
 
+        else:
+
+            state.intent = "conversation"
+
+        logger.info(
+            f"Intent routed: {state.intent}"
+        )
+
+        return state

@@ -1,4 +1,42 @@
-class ReasoningService:
+from app.core.state.cognitive_state import (CognitiveState,Response,)
+
+
+
+
+class ReasoningEngine:
+
+    def process(
+        self,
+        state: CognitiveState
+        ) -> CognitiveState:
+
+
+        if state.context is None:
+            return state
+
+        if state.intent == "learning":
+
+            message = self.recommend_learning(
+                state.context.knowledge
+
+            )
+
+        elif state.intent == "knowledge_summary":
+
+            message = self.summarize_user(
+                state.context.knowledge
+            )
+            
+        else:
+            return state
+
+        state.response = Response(
+            message=message
+        )
+
+        return state
+
+
 
     def summarize_user(self, context: dict) -> str:
 

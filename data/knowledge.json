@@ -7,34 +7,19 @@
     "goals": [
         {
             "content": "I want to become an AWS Solutions Architect."
-        },
-        {
-            "content": "I want to become an AWS Solutions Architect"
         }
     ],
     "projects": [
-        {
-            "content": "I am building Bright Sports"
-        },
         {
             "content": "I am building Bright Sports"
         }
     ],
     "learning": [
         {
-            "content": "I am studying AWS"
-        },
-        {
             "content": "I am studying Terraform"
         },
         {
             "content": "I am studying Docker"
-        },
-        {
-            "content": "I am studying AWS"
-        },
-        {
-            "content": "I am studying AWS"
         },
         {
             "content": "I learned about Docker volumes today."
@@ -46,10 +31,10 @@
             "content": "I am learning Kubernetes."
         },
         {
-            "content": "I am learning Kubernetes."
+            "content": "I'm learning Terraform."
         },
         {
-            "content": "I'm learning Terraform."
+            "content": "I am studying AWS"
         }
     ],
     "preferences": [
@@ -60,9 +45,6 @@
     "tasks": [
         {
             "content": "remind me to study at night."
-        },
-        {
-            "content": "I need to finish my Terraform lab"
         },
         {
             "content": "I need to finish my Terraform lab"
@@ -85,19 +67,7 @@
             "content": "I completed my Terraform course."
         },
         {
-            "content": "I completed my Terraform course."
-        },
-        {
-            "content": "I completed my Terraform course."
-        },
-        {
             "content": "I passed my Docker certification."
-        },
-        {
-            "content": "I passed my Python certification."
-        },
-        {
-            "content": "I passed my Python certification."
         },
         {
             "content": "I passed my Python certification."

@@ -469,3 +469,9 @@
 2026-07-15 12:51:13,319 | INFO | bright-assistant | Classification created: conversation
 2026-07-15 12:51:13,320 | INFO | bright-assistant | Planning: learning plan created.
 2026-07-15 12:51:13,320 | INFO | bright-assistant | Cognetive Pipeline completed.
+2026-07-15 17:24:25,810 | INFO | bright-assistant | Received message: What do you know about me?
+2026-07-15 17:24:25,811 | INFO | bright-assistant | Intent routed: knowledge_summary
+2026-07-15 17:24:25,811 | INFO | bright-assistant | Classification created: conversation
+2026-07-15 17:24:25,812 | INFO | bright-assistant | Goal detected: I want to become an AWS Solutions Architect.
+2026-07-15 17:24:25,812 | INFO | bright-assistant | Priority selected: I want to become an AWS Solutions Architect.
+2026-07-15 17:24:25,813 | INFO | bright-assistant | Cognetive Pipeline completed.

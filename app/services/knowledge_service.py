@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-
+from app.utils.logger import logger
 from app.core.state.cognitive_state import Classification
 
 
@@ -54,7 +54,32 @@ class KnowledgeService:
         if category not in knowledge:
             knowledge[category] = []
 
+
+        content = entry["content"].strip().lower()
+
+        for existing in knowledge[category]:
+
+            existing_content = (
+                existing["content"]
+                .strip()
+                .lower()
+            )
+                
+            if existing_content == content:
+
+                logger.info(
+                    f"Duplicate {category} skipped."
+                )   
+
+                    
+                return    
+
         knowledge[category].append(entry)
+        
+        logger.info(
+            f"Stored new {category} memory."
+        )
+
 
         self.save(knowledge)
 

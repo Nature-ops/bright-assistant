@@ -25,6 +25,11 @@ class Classification:
 @dataclass
 class Context:
 
+
+    """
+    Context assembled for reasoning.
+    """
+
     knowledge: dict[str, Any]
 
     learning: list[str] | None = None
@@ -34,19 +39,19 @@ class Context:
 
 
 
-    """
-    Context assembled for reasoning.
-    """
+    
 
 
 @dataclass
 class Response:
 
-    message: str
-
+    
     """
     Final response produced by the cognitive pipeline.
     """
+
+    message: str
+
 
 
 @dataclass
@@ -55,6 +60,27 @@ class Plan:
     title: str
     steps: list[str]
     
+
+@dataclass
+class Goal:
+    """
+    Represents an active user goal.
+    """
+
+    title: str
+    status: str
+
+
+
+@dataclass
+class Priority:
+    """
+    Represents the user's current highest priority.
+    """
+
+    title: str
+    reason: str
+
 
 
 @dataclass
@@ -76,6 +102,14 @@ class CognitiveState:
 
     context: Context | None = None
 
+    goal: Goal | None = None
+
+    priority: Priority | None = None
+
     plan: Plan | None = None
 
     response: Response | None = None
+
+    
+
+

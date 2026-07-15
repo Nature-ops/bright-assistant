@@ -457,3 +457,15 @@
 2026-07-15 12:36:42,095 | INFO | bright-assistant | Classification created: conversation
 2026-07-15 12:36:42,096 | INFO | bright-assistant | Planning: learning plan created.
 2026-07-15 12:36:42,097 | INFO | bright-assistant | Cognetive Pipeline completed.
+2026-07-15 12:46:55,730 | INFO | bright-assistant | Received message: I'm learning Terraform.
+2026-07-15 12:46:55,730 | INFO | bright-assistant | Intent routed: conversation
+2026-07-15 12:46:55,730 | INFO | bright-assistant | Classification created: learning
+2026-07-15 12:46:55,731 | INFO | bright-assistant | Knowledge stored successfully.
+2026-07-15 12:46:55,740 | INFO | bright-assistant | Cognetive Pipeline completed.
+2026-07-15 12:46:55,748 | INFO | bright-assistant | User message saved.
+2026-07-15 12:47:04,252 | INFO | bright-assistant | Assistant response saved.
+2026-07-15 12:51:13,318 | INFO | bright-assistant | Received message: What am I studying?
+2026-07-15 12:51:13,318 | INFO | bright-assistant | Intent routed: learning
+2026-07-15 12:51:13,319 | INFO | bright-assistant | Classification created: conversation
+2026-07-15 12:51:13,320 | INFO | bright-assistant | Planning: learning plan created.
+2026-07-15 12:51:13,320 | INFO | bright-assistant | Cognetive Pipeline completed.

@@ -8,7 +8,10 @@ from app.core.reasoning.reasoning_engine import ReasoningEngine
 from app.core.reflection.reflection_engine import ReflectionEngine
 from app.core.knowledge.knowledge_engine import KnowledgeEngine
 from app.core.planning.planning_engine import PlanningEngine
+from app.core.priority.priority_engine import PriorityEngine
+from app.core.goals.goal_engine import GoalEngine
 logger = logging.getLogger(__name__)
+
 
 
 class CognitivePipeline:
@@ -27,6 +30,10 @@ class CognitivePipeline:
             ReflectionEngine(),
 
             ContextEngine(),
+
+            GoalEngine(),
+
+            PriorityEngine(),
 
             PlanningEngine(),
 

@@ -61,6 +61,9 @@ class PlanningEngine:
         for resource_id in milestone.resources
 ]
 
+        print("Milestone skills:", milestone.skills)
+        print("Milestone resources:", milestone.resources)
+
         return LearningPlan(
         milestone=milestone,
         skills=skills,

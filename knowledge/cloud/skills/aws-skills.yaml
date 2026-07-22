@@ -1,3 +1,15 @@
+- id: cloud-basics
+  name: Cloud Basics
+  description: Learn the fundamental concepts of cloud computing.
+
+- id: aws-global-infrastructure
+  name: AWS Global Infrastructure
+  description: Understand AWS Regions, Availability Zones, and Edge Locations.
+
+- id: shared-responsibility
+  name: Shared Responsibility Model
+  description: Learn how security responsibilities are shared between AWS and customers.
+
 - id: iam-users
   name: IAM Users
   description: Learn how IAM users authenticate and access AWS.

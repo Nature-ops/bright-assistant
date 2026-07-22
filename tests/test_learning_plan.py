@@ -1,52 +1,56 @@
 from app.services.planning_engine import PlanningEngine
 
 
-def run_scenario(completed):
+def print_learning_plan(plan):
+    print("=" * 50)
+    print("Learning Plan")
+    print("=" * 50)
+
+    print(f"\nMilestone")
+    print(f"---------")
+    print(plan.milestone.title)
+
+    print(f"\nDescription")
+    print(f"-----------")
+    print(plan.milestone.description)
+
+    print("\nSkills")
+    print("------")
+
+    for skill in plan.skills:
+        print(f"• {skill.name}")
+        print(f"  {skill.description}")
+
+    print("\nResources")
+    print("---------")
+
+    for resource in plan.resources:
+        print(f"• {resource.title}")
+        print(f"  {resource.url}")
+
+    print("\nCompletion")
+    print("----------")
+    print(f"Method: {plan.milestone.completion.method}")
+    print(f"Required: {plan.milestone.completion.required}")
+
+
+def main():
+
     planner = PlanningEngine()
 
     planner.load_framework(
         "knowledge/cloud/frameworks/aws-sa.yaml"
     )
 
+    completed = []
+
     plan = planner.create_learning_plan(completed)
 
-    print(f"\nCompleted: {completed}")
-
     if plan is None:
-        print("🎉 Framework completed.")
+        print("Framework completed.")
         return
 
-    print("=== Learning Plan ===")
-    print(f"Milestone: {plan.milestone.title}")
-    print(f"Description: {plan.milestone.description}")
-
-    if plan.milestone.skills:
-        print("\nSkills:")
-        for skill in plan.milestone.skills:
-            print(f" - {skill}")
-
-    if plan.milestone.resources:
-        print("\nResources:")
-        for resource in plan.milestone.resources:
-            print(f" - {resource}")
-
-    print("\nCompletion:")
-    print(f"Method: {plan.milestone.completion.method}")
-    print(f"Required: {plan.milestone.completion.required}")
-
-
-def main():
-    run_scenario([])
-
-    run_scenario([
-        "aws-fundamentals"
-    ])
-
-    run_scenario([
-        "aws-fundamentals",
-        "iam",
-        "ec2"
-    ])
+    print_learning_plan(plan)
 
 
 if __name__ == "__main__":

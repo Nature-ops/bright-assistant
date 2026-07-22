@@ -18,6 +18,8 @@ class Framework(BaseModel):
     domain: str
 
     description: str
+    skill_catalog: str
+    resource_catalog: str
 
     difficulty: str
 

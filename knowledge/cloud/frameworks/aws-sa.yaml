@@ -1,25 +1,23 @@
 
 
 id: aws-sa
-
-name: AWS Solutions Architect Associate
-
+name: AWS Solutions Architect
 version: "1.0"
 
 domain: cloud
 
-description: >
-  A structured learning framework for preparing
-  for the AWS Certified Solutions Architect Associate certification.
+description: AWS Solutions Architect learning path
 
-difficulty: intermediate
+skill_catalog: aws-skills.yaml
+resource_catalog: aws-resources.yaml
 
-estimated_duration: "12 weeks"
+difficulty: beginner
+
+estimated_duration: 12 weeks
 
 tags:
   - aws
   - cloud
-  - certification
 
 goal_template:
   title: Become an AWS Solutions Architect
@@ -45,9 +43,70 @@ milestones:
     skills:
       - iam-users
       - iam-policies
+
+    resources:
+      - aws-docs
+      - aws-skill-builder
+
     completion:
       method: manual
       required: true
+
+  - id: ec2
+    title: Amazon EC2
+    description: Learn how to launch and manage EC2 instances.
+    depends_on:
+      - iam
+    skills:
+      - ec2-basics
+      - ec2-networking
+
+    resources:
+      - aws-docs
+      - aws-skill-builder
+
+    completion:
+      method: manual
+      required: true
+
+  - id: s3
+    title: Amazon S3
+    description: Learn object storage with Amazon S3.
+    depends_on:
+      - ec2
+    skills:
+      - s3-buckets
+      - s3-security
+
+    resources:
+      - aws-docs
+      - aws-skill-builder
+
+
+    completion:
+      method: manual
+      required: true
+
+  - id: vpc
+    title: Amazon VPC
+    description: Learn AWS networking with VPC.
+    depends_on:
+      - s3
+
+    skills:
+      - subnets
+      - route-tables
+      - security-groups
+
+    resources:
+      - aws-docs
+      - aws-skill-builder
+
+
+
+    completion:
+      method: manual
+      required: true      
 
 
  

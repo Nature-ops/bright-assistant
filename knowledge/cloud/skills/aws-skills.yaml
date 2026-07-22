@@ -1,0 +1,23 @@
+- id: iam-users
+  name: IAM Users
+  description: Learn how IAM users authenticate and access AWS.
+
+- id: iam-policies
+  name: IAM Policies
+  description: Learn how JSON policies control permissions.
+
+- id: ec2-basics
+  name: EC2 Basics
+  description: Launch, connect to, and manage EC2 instances.
+
+- id: ec2-networking
+  name: EC2 Networking
+  description: Understand security groups, key pairs, and networking.
+
+- id: s3-buckets
+  name: S3 Buckets
+  description: Create and manage Amazon S3 buckets.
+
+- id: s3-security
+  name: S3 Security
+  description: Secure S3 buckets using IAM and bucket policies.

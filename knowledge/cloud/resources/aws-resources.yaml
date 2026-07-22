@@ -1,0 +1,19 @@
+- id: aws-docs
+  title: AWS Documentation
+  type: documentation
+  url: https://docs.aws.amazon.com/
+
+- id: aws-skill-builder
+  title: AWS Skill Builder
+  type: training
+  url: https://skillbuilder.aws/
+
+- id: ec2-user-guide
+  title: Amazon EC2 User Guide
+  type: documentation
+  url: https://docs.aws.amazon.com/ec2/
+
+- id: s3-user-guide
+  title: Amazon S3 User Guide
+  type: documentation
+  url: https://docs.aws.amazon.com/s3/

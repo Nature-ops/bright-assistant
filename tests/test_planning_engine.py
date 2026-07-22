@@ -11,9 +11,13 @@ def main():
     milestone = planner.get_first_milestone()
 
     print("\n=== First Milestone ===")
+    if milestone is None:
+        print("No milestone found.")
+        return
+
     print(f"ID: {milestone.id}")
     print(f"Title: {milestone.title}")
-    print(f"Description: {milestone.description}")
+    print(f"Description: {getattr(milestone, 'description', '')}")
 
 
 if __name__ == "__main__":

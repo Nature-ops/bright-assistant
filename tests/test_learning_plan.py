@@ -41,10 +41,15 @@ def main():
     planner.load_framework(
         "knowledge/cloud/frameworks/aws-sa.yaml"
     )
+    planner = PlanningEngine()
 
-    completed = []
+    planner.load_framework(
+        "knowledge/cloud/frameworks/aws-sa.yaml"
+    )
 
-    plan = planner.create_learning_plan(completed)
+    plan = planner.create_learning_plan_for_framework(
+    "aws-sa"
+    )
 
     if plan is None:
         print("Framework completed.")
